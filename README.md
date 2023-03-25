@@ -14,7 +14,7 @@ A collection of practice code files for Python Programming Language.
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
 - [Usage](#usage)
-- [License](#license)
+- [Projects/Other Repository](#projects-other-repository)
 
 ## **Technologies Used**
 
@@ -29,7 +29,7 @@ Here all the codes are written in Python and also there are some projects of DJA
 
 There in the code files a lot of problems are solved apart from that every small topic's codes are covered so step by step any one can follow from top to bottom.
 
-## **Extras**
+## **Projects Other Repository**
 
 **Projects**
 
