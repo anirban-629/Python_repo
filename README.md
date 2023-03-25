@@ -10,7 +10,6 @@
 
 A collection of practice code files for Python Programming Language.
 
-- [Description](#description)
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
 - [Usage](#usage)
