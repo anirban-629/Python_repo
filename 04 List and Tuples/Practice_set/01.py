@@ -1,0 +1,13 @@
+list=[]
+print("Enter 5 Fruit names: ")
+a=input()
+b=input()
+c=input()
+d=input()
+e=input()
+list.append(a)
+list.append(b)
+list.append(c)
+list.append(d)
+list.append(e)
+print("Your Fruits are: ",list)

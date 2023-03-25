@@ -1,0 +1,12 @@
+class Form:
+    Formname="RailwayForm"
+    print(Formname)
+    def data(self):
+        print(f"Name={self.name}")
+        print(f"Price={self.price}")
+
+myForm=Form()
+myForm.name="Anirban"
+myForm.price="1000"
+myForm.data()
+

@@ -1,0 +1,49 @@
+import random
+
+def sending_name(name1,name2):
+    nm1_to_nm2(name1,name2)
+    nm2_to_nm1(name1,name2)
+
+name1=input("Enter name of Player 1: ")
+name2=input("Enter name of Player 2: ")
+sending_name(name1,name2)
+
+while(1):
+    turn=1
+    print(f"Turn->{turn}\n")
+
+    def jumbling(word):
+        jumbled= "".join(random.sample(word, len(word)))
+        return jumbled
+
+    def nm1_to_nm2(name1,name2):
+        score_nm1=0
+        print("WELCOME ",name1.upper())
+        print("WELCOME ",name2.upper())
+        nm1_qstn=input(f"{name1} Enter your Word for {name2}:")
+        jumbled_nm1=jumbling(nm1_qstn)
+        print("Guess the word: ",jumbled_nm1)
+        nm2_ans=input(f"{name2} Enter your answer:")
+        if nm2_ans==nm1_qstn:
+            score_nm1=score_nm1+1
+            print(f"Yeah..! You are correct...\nScore: {score_nm1}")
+        else:
+            print(f"Oops..! Wrong answer...\nScore: {score_nm1}")
+        nm2_to_nm1(name1, name2)
+
+    def nm2_to_nm1(name1,name2):
+        score_nm2=0
+        nm2_qstn=input(f"{name2} Enter your Word for {name1}:")
+        jumbled_nm2=jumbling(nm2_qstn)
+        print("Guess the word: ",jumbled_nm2)
+        nm1_ans=input(f"{name2} Enter your answer:")
+        if nm1_ans==nm2_qstn:
+            score_nm2=score_nm2+1
+            print(f"Yeah..! You are correct...\nScore: {score_nm2}")
+        else:
+            print(f"Oops..! Wrong answer...\nScore: {score_nm2}")
+
+    next=int(input("Press 1 to continue or 0 to exit"))
+    if next==0:
+        # print(f"{name1}'s Final Score is{score_nm1}")
+        break

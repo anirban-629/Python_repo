@@ -1,0 +1,71 @@
+Feb 27, 2015 12:03:16 PM com.greenhat.vie.comms.proxy.util.ProxyRegistrationFactory init
+INFO: RIT Version: 8.7.0.0
+Feb 27, 2015 12:03:16 PM com.greenhat.vie.comms.proxy.util.ProxyRegistrationFactory init
+INFO: Loading configuration from file:/C:/Program%20Files/IBM/RationalTestControlPanel2/httptcp/registration.xml
+Feb 27, 2015 12:03:16 PM com.greenhat.proxy.http.HTTPProxy init
+INFO: Loading server certificate settings from 'file:/C:/Program%20Files/IBM/RationalTestControlPanel2/httptcp/greenhat.jks' (type=jks) using alias 'mykey', signing algorithm 'SHA1withRSA'
+Feb 27, 2015 12:03:16 PM com.greenhat.proxy.http.HTTPProxy init
+INFO: Loading outbound identity settings from 'file:/C:/Program%20Files/IBM/RationalTestControlPanel2/httptcp/greenhat.jks'
+Feb 27, 2015 12:03:16 PM com.greenhat.proxy.http.HTTPProxy init
+INFO: Secure outbound connections will use SSL_TLS and identity settings from 'file:/C:/Program%20Files/IBM/RationalTestControlPanel2/httptcp/greenhat.jks'
+Feb 27, 2015 12:03:17 PM com.greenhat.proxy.http.HTTPProxy start
+INFO: Using plain to secure comms port of 3131
+Feb 27, 2015 12:03:17 PM com.greenhat.proxy.http.HTTPProxy start
+INFO: Starting up HTTPS listener on port 3129, bound to all addresses
+Feb 27, 2015 12:03:17 PM com.greenhat.proxy.https.HTTPSProxyEngine <init>
+INFO: Initialised SSL proxy, listening on port 3129 using SSL_TLS
+Feb 27, 2015 12:03:17 PM com.greenhat.proxy.http.HTTPProxy start
+INFO: Forwarding CONNECT requests from HTTP to HTTPs proxy
+Feb 27, 2015 12:03:17 PM com.greenhat.proxy.https.HTTPSProxyEngine run
+INFO: Started SSL proxy
+Feb 27, 2015 12:03:17 PM com.greenhat.proxy.http.HTTPProxy start
+INFO: Starting up HTTP listener on port 3128, bound to all addresses
+Feb 27, 2015 12:03:17 PM com.greenhat.proxy.http.membrane.RoutingInterceptor createRouter
+FINE: Started HTTP listener on port: 3128
+Feb 27, 2015 12:03:17 PM com.greenhat.proxy.tcp.impl.TCPProxyImpl <init>
+INFO: Proxy created, registration configuration location: file:/C:/Program%20Files/IBM/RationalTestControlPanel2/httptcp/registration.xml
+Feb 27, 2015 12:03:17 PM com.greenhat.proxy.tcp.impl.TCPProxyImpl start
+INFO: TCPProxy starting
+Feb 27, 2015 12:03:17 PM com.greenhat.proxy.tcp.impl.TCPProxyImpl cleanup
+INFO: Proxy cleaning up: 0 existing port forwarders
+Feb 27, 2015 12:03:17 PM com.greenhat.vie.comms.proxy.util.ProxyRegistrationFactory init
+INFO: RIT Version: 8.7.0.0
+Feb 27, 2015 12:03:17 PM com.greenhat.vie.comms.proxy.util.ProxyRegistrationFactory init
+INFO: Loading configuration from file:/C:/Program%20Files/IBM/RationalTestControlPanel2/httptcp/registration.xml
+Feb 27, 2015 12:03:17 PM com.greenhat.proxy.http.routing.RoutingEngine setConfiguration
+FINE: Applying new routing configuration. RoutingConfiguration:
+Feb 27, 2015 12:03:17 PM com.greenhat.proxy.http.recording.RecordingEngine setConfiguration
+FINE: Applying new recording configuration
+Feb 27, 2015 12:03:17 PM com.greenhat.proxy.tcp.impl.TCPProxyImpl startAllPortForwarders
+INFO: Proxy starting: 0 port forwarders
+Feb 27, 2015 12:03:17 PM com.greenhat.proxy.tcp.impl.TCPProxyImpl changed
+INFO: Configuration changed: lastUpdated: 1425038597357
+observationLevel: 1
+
+Feb 27, 2015 12:03:17 PM com.greenhat.proxy.tcp.impl.ForwardingRuleRegistryImpl updateForwardingRules
+INFO: No rules, will revert all existing forwarding rules to base
+Feb 27, 2015 12:03:42 PM com.greenhat.proxy.http.routing.RoutingEngine setConfiguration python
+FINE: Applying new routing configuration. RoutingConfiguration:
+  Routing rule condition: ((DESTINATION_PORT matches 80 AND HTTP_METHOD matches GET) AND (DESTINATION_HOST matches example.com OR ((DESTINATION_HOST matches 93.184.216.34 OR DESTINATION_HOST matches 2606:2800:220:1:248:1893:25c8:1946) OR ((SOURCE_HOST matches 2606:2800:220:1:248:1893:25c8:1946 OR SOURCE_HOST matches 93.184.216.34) AND ((DESTINATION_HOST matches localhost OR DESTINATION_HOST matches 127.0.0.1) OR DESTINATION_HOST matches 0:0:0:0:0:0:0:1)))))
+  LoadBalancer (strategy: RoundRobinStrategy [last=-1]):
+    ActivityDestination [activityId=870cfcc9-20b1-4e8c-a97f-a37139da46c0, endpoint=[2001:0db8:85a3: python 0042:1000:8a2e:0370:7334]:80]
+Feb 27, 2015 12:03:42 PM com.greenhat.proxy.http.recording.RecordingEngine setConfiguration
+FINE: Applying new recording configuration
+Feb 27, 2015 12:03:55 PM com.greenhat.proxy.http.membrane.RoutingInterceptor handleRequest
+FINE: Request received for host example.com:80 python
+Feb 27, 2015 12:03:55 PM com.greenhat.proxy.http.membrane.RoutingInterceptor handleRequest
+FINE: Testing request against recording rules.
+Feb 27, 2015 12:03:55 PM com.greenhat.proxy.http.recording.RecordingConfiguration lookup
+FINE: No more rules to try. No match found for request.
+Feb 27, 2015 12:03:55 PM com.greenhat.proxy.http.membrane.RoutingInterceptor handleRequest
+FINE: Testing request against routing rules.
+Feb 27, 2015 12:03:55 PM com.greenhat.proxy.http.condition.RequestMatcherImpl matchesHTTPMethod
+FINE: Request HTTP method POST does not match condition: GET
+Feb 27, 2015 12:03:55 PM com.greenhat.proxy.http.routing.RoutingConfiguration lookup python
+FINE: Rule condition failed. Trying next rule.
+Feb 27, 2015 12:03:55 PM com.greenhat.proxy.http.routing.RoutingConfiguration lookup
+FINE: No more rules to try. No match found for request.
+Feb 27, 2015 12:03:55 PM com.greenhat.proxy.http.membrane.RoutingInterceptor handleRequest
+FINE: Request for host example.com:80 to be routed to live system
+Feb 27, 2015 12:04:16 PM com.greenhat.proxy.http.recording.RecordingConfiguration lookup
+FINE: No more rules to try. No match found for request.

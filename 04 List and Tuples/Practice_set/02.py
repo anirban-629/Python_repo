@@ -1,0 +1,12 @@
+list=[]
+a=input("Marks of student 1: ")
+b=input("Marks of student 2: ")
+c=input("Marks of student 3: ")
+d=input("Marks of student 4: ")
+e=input("Marks of student 5: ")
+list.append(a)
+list.append(b)
+list.append(c)
+list.append(d)
+list.append(e)
+print("Marks are: ",list)

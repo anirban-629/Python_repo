@@ -1,0 +1,10 @@
+{
+    // In this working directory it'll make the html extension as django-html
+    "files.associations": {
+        "*.html": "django-html"
+    },
+    // Help to use html emmets in django-html
+    "emmet.includeLanguages": {
+        "django-html": "html"
+      }
+}

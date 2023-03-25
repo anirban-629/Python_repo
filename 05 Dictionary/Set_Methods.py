@@ -1,0 +1,20 @@
+a=set()
+a.add(3)
+a.add(1)
+a.add(2)
+a.add(4)
+a.add(4)
+a.add(4)
+print(a)
+print("Length of the set is: ",len(a))
+a.remove(4)
+print("After removing 4 Length of the set is: ",len(a))
+print("Set is: ",a)
+a.pop()
+print("After pop: ",a)
+print(a.pop)
+print("Set after clearing: ",a.clear())
+set=(1,2,3,4,5)
+
+
+# Union and Intersection remaining part...

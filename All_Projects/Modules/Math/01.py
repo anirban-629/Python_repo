@@ -1,0 +1,10 @@
+import math
+print(math.tan(60))
+print(math.cos(60))
+print(int(math.sqrt(9)))
+print(int(math.pow(9,2)))
+print(math.floor(2.4))
+print(math.ceil(2.4))
+print(math.factorial(3))
+print(math.pi)
+print(math.e)

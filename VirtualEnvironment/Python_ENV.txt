@@ -1,0 +1,15 @@
+virtualenv <file_name>
+.\Scripts\activate -> [to activate]
+
+if Error -> 
+windows powershell admin -
+set-executionpolicy remotesigned
+
+pip freeze > requirements.txt ->[all the installed packages will be here along with their versions]
+
+pip install <package>==<version> -> [to download a particular version]
+pip install -r .\requirements.txt -> [to install all packages]
+
+virtualenv --system-site-packages <file_name> -> [itll create a env with all the base installed packages of python in the computer]
+
+deactivate ->[deactivationg virtual environment]
