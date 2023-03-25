@@ -4,7 +4,6 @@
 
 > Python is a high-level, interpreted programming language that emphasizes code readability and simplicity.
 
-
 > Python has a large standard library and an active community of developers, making it a popular choice for a wide range of applications, from web development to data analysis and machine learning.
 
 ## **Table of Contents**
@@ -19,7 +18,7 @@ A collection of practice code files for Python Programming Language.
 
 ## **Technologies Used**
 
-Here all the codes are written in Python and also there are some projects of DJANGO, [Voice_Assitant](https://github.com/anirban-629/Python_Voice_Assistant) etc.
+Here all the codes are written in Python and also there are some projects of DJANGO, Voice_Assitant etc.
 
 ## **Setup**
 
@@ -29,6 +28,17 @@ Here all the codes are written in Python and also there are some projects of DJA
 ## **Usage**
 
 There in the code files a lot of problems are solved apart from that every small topic's codes are covered so step by step any one can follow from top to bottom.
+
+## **Extras**
+
+**Projects**
+
+- [Tic Tac Toe Game](https://github.com/anirban-629/Tic_Tac_Toe_Python)
+- [Voice Assitant](https://github.com/anirban-629/Python_Voice_Assistant)
+
+**Repository**
+
+- [PyMongo Repo](https://github.com/anirban-629/PyMongo-Repo)
 
 <br>
 <br>
